@@ -1,71 +1,71 @@
 <h1 align="center">FormaNT RENTAL CARS</h1>
-FormaNT - Rental Cars é uma aplicação web baseada em Java que permite a um utilizador registar-se e alugar um carro. O utilizador pode escolher o carro que deseja alugar, a data de inicio e fim do aluguel.
+FormaNT - Rental Cars is a Java-based web application that allows a user to register and rent a car. The user can choose the car they want to rent, the start and end date of the rental.
 
 <hr/>
 
-# 🚗 Aplicação
+# 🚗 Application
 
-- Página de busca: os usuários podem pesquisar carros filtrando por vários parâmetros;
-- Checar reservas: pode-se verificar as reservas feitas por cada utilizador;
-- Sistema de Login: os usuários podem se registrar e fazer login na aplicação;
-- Sistema de Edição/Atualização: pode-se adicionar, editar e remover carros, e adicionar, editar e remover utilizadores.
+- Search page: users can search for cars by filtering through various parameters;
+- Check reservations: users can verify the reservations made by each user;
+- Login System: users can register and log in to the application;
+- Edit/Update System: cars can be added, edited, and removed, and users can be added, edited, and removed.
 
 <hr/>
 
-# 🚗 Tecnologia
+# 🚗 Technology
 
-FormaNT - Rental Cars é construido usando as seguintes tecnologias:
+FormaNT - Rental Cars is built using the following technologies:
 
 BACKEND:
-- Java: versão 17;
-- PostgreSQL: versão 7.2;
-- Spring Boot: versão 3.1.2;
+- Java: version 17;
+- PostgreSQL: version 7.2;
+- Spring Boot: version 3.1.2;
 
 <hr/>
 
-# 🚗 Como executar o projeto
+# 🚗 How to run the project
 
-## Passo 1: Baixar e extrair o código 
+## Step 1: Download and extract the code
 
-Primeiramente, baixe o código do website e extraia o arquivo ZIP para uma pasta no seu sistema local.
+First, download the website code and extract the ZIP file to a folder on your local system.
 
-## Passo 2: Faça as configurações necessárias
+## Step 2: Make the necessary configurations
 
-### 🐘 Configurar o banco de dados
-Esta aplicação usa o PostgreSQL como DB. Você precisará instalar o sistema e criar um banco de dados para a aplicação.
+### 🐘 Configure the database
+This application uses PostgreSQL as its DB. You will need to install the system and create a database for the application.
 
-🚨 NOTE: O banco de dados vem configurado no projeto para rodar na porta 5432. Se você estiver usando outra porta, altere o arquivo "application.properties" para a porta que você está usando.
+🚨 NOTE: The database is configured in the project to run on port 5432. If you are using a different port, change the "application.properties" file to the port you are using.
 
-- PORTA: 5432
-- USUARIO: postgres
-- SENHA: password
+- PORT: 5432
+- USER: postgres
+- PASSWORD: password
 
-## Passo 3: Execute seu projeto
+## Step 3: Run your project
 
-Abra seu editor de código (Como o IntelliJ), navegue até o diretório do projeto e execute a aplicação.
+Open your code editor (such as IntelliJ), navigate to the project directory, and run the application.
 
 <hr/>
 
-### ✨ Indentação de código
+### ✨ Code indentation
 
-Quando você realiza um commit no Git, o código é automaticamente formatado para seguir um padrão de indentação. 
+When you perform a commit in Git, the code is automatically formatted to follow an indentation standard.
 
-🚨 NOTE: No entanto, para que a formatação seja aplicada, o Git executa automaticamente o comando "git add .", mesmo que você tenha modificado apenas um arquivo usando "git add 'nome_do_arquivo'", o Git, na verdade, realizará um "git add ." para incluir todas as alterações pendentes no commit, incluindo as mudanças de formatação. Portanto, é importante ter certeza de que você fez apenas as alterações necessárias antes de realizar o commit, pois todas as mudanças, incluindo a formatação, serão incluídas.
+🚨 NOTE: However, for the formatting to be applied, Git automatically executes the command "git add .", even if you have modified only one file using "git add 'filename'", Git will actually perform a "git add ." to include all pending changes in the commit, including the formatting changes. Therefore, it is important to make sure that you have made only the necessary changes before performing the commit, as all changes, including formatting, will be included.
 
-Para a indentação automática funcionar é necessário alterar o arquivo pre-commit.sample no diretório FormaNT/.git/hooks.
+For automatic indentation to work, it is necessary to modify the pre-commit.sample file in the FormaNT/.git/hooks directory.
 
-- Abra o arquivo pre-commit.sample em algum editor de texto.
-- Delete tudo o que está nesse arquivo e cole o seguinte código:
+- Open the pre-commit.sample file in a text editor.
+- Delete everything in this file and paste the following code:
 ```
 #!/bin/bash
 ./pre-commit.sh
 ```
-- Renomeie o arquivo removendo o ".sample" e deixe somente "pre-commit".
-- Agora após o "git commit" o arquivo "pre-commit.sh" na raiz do projeto será executado.
+- Rename the file by removing ".sample" and leaving only "pre-commit".
+- Now, after "git commit", the "pre-commit.sh" file in the project root will be executed.
 
 <hr/>
 
-# 🚨 Avisos Importantes
+# 🚨 Important Warnings
 
-- 🚨 O Tomcat está configurado para rodar na porta 8080, então, além do PostgreSQL na porta 5432, certifique-se de que não tenha nenhum outro aplicativo rodando nesta porta (8080). Caso haja, faça as alterações necessárias (application.properties).
-- 🚨 O projeto já vem com algumas dependências previamente instaladas. Caso seja necessário realizar alterações, lembre-se que o mesmo foi desenvolvido seguindo as configurações acima.
+- 🚨 Tomcat is configured to run on port 8080, so in addition to PostgreSQL on port 5432, make sure you don't have any other application running on this port (8080). If there is, make the necessary changes (application.properties).
+- 🚨 The project already comes with some dependencies pre-installed. If it is necessary to make changes, remember that it was developed following the configurations above.
